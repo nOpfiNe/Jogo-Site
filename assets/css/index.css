@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Aladin', cursive;
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*background*/
+
+.blue{
+    background-color: #002BC2;
+}
+
+.white{
+    background-color: white;
+}
+
+.yellow{
+    background-color: #FFF500;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+}
+
+/*menu*/
+
+/*logo*/
+
+#logo-menu{
+    width: 10vh;
+    padding: 0.9rem;
+    padding-left: 3.5em;
+    cursor: pointer;
+    transition: transform 2s;
+    padding-top: 1.5rem;
+    float: left;
+}
+
+
+
+#logo-menu:hover{
+    transform: rotateZ(360deg);
+}
+
+/*fim logo*/
+
+
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    padding-left: 48em;
+    padding-top: 3.4em;
+    
+   
+}
+
+.menu_list a {
+    text-decoration:none; 
+    letter-spacing: 0.2rem; 
+    font-size: 1.3rem;
+    color: #fff;  
+    padding-right: 3em;
+    cursor: pointer;
+}
+
+.menu_list a:hover {
+    color: #F4BC33;
+}
+/*fim menu*/
+
+/*titulo e subtitulo*/
+
+.subtitle{
+    padding-left: 9em;
+    padding-top: 7em;
+}
+
+/*titulo*/
+
+.titulo{
+    display: flex;
+    font-size: 3.2em;
+    color: #fff;
+    letter-spacing: 0.3rem;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+}
+
+#v{
+    color: #FF2626;
+}
+
+#a{
+    color: #FF9900;
+}
+
+#a2{
+    color: #FFE600;
+}
+
+#n{
+    color: #07A52A;
+}
+
+#t{
+    color: #439ED1;
+}
+
+#s{
+    color: #A903C3;
+}
+
+/*subtitulo*/
+
+.subtitulo{
+    font-size: 1.7em;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+}
+
+
+/*Avião*/
+
+.avião_menu{
+    width: 40%;
+    margin-left: 2.5em;
+    margin-top: -3em;
+    animation: go-back 2s infinite alternate;
+}
+  
+@keyframes go-back {
+    from {
+      transform: translateY(30px);
+      
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+  
+
+/*Butão*/
+
+button{
+    margin: 30px;
+}
+
+.button-28 {
+  background-color: #FFF500;
+  appearance: none;
+  border: 2px solid #FFF500;
+  color: #002BC2;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 15px;
+  min-width: 0;
+  outline: none;
+  padding: 6px 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 13%;
+  will-change: transform;
+  margin-left: 7em;
+  
+}
+
+.button-28 a{
+    text-decoration:none;
+    color: inherit;
+    
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28 a:hover{
+    text-decoration:none; 
+}
+
+.button-28:hover {
+  text-decoration:none; 
+  color: #FFF500;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.568) 0 8px 15px;
+  transform: translateY(-5px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/*Wave*/
+
+.nuvem_branca{
+    background-image: url("img/img_index/nuvem_branca.png");
+    width: 100%;
+    height: 75px;
+}
+
+.nuvem_amarela{
+    margin-bottom: 0;
+    display: flex;
+    width: 219vh;
+    margin-top: 5rem;
+}
+
+/* Parte Branca*/
+
+/*titulo principal*/
+
+#cap{
+    padding-top: 0.9rem;
+    text-align: center;
+    font-size: 2.3em;
+    letter-spacing: 0.1rem;
+}
+
+/*container*/
+.container{
+    
+    display: flex;
+}
+
+.fases{
+    padding: 1rem;
+    
+}
+
+/*MAR*/
+
+.mar_sobre{
+    width: 50%;
+    padding: 2em;
+    padding-left: 7.3em;
+    transition: transform 0.5s;
+    
+}
+
+.mar_sobre:hover{
+    transform: scale(1.1);
+    
+}
+
+.perso_mar{
+    margin-top: 2rem;
+    margin-left: 3.3em;
+    width: 75%;
+}
+
+#titulo_mar{
+    font-size: 1.3em;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-bottom: .8rem;
+}
+
+#texto_mar{
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    width: 21rem;
+    padding-left: 3rem;
+}
+
+/*TERRA*/
+
+.terra_sobre{
+    width: 50%;
+    padding: 2em;
+    padding-left: 7.3em;
+    transition: transform 0.5s;
+}
+
+.terra_sobre:hover{
+    transform: scale(1.1);
+}
+
+.perso_terra{
+    margin-top: 2rem;
+    margin-left: 3.3em;
+    width: 75%;
+}
+
+#titulo_terra{
+    font-size: 1.3em;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-bottom: .8rem;
+}
+
+#texto_terra{
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    width: 21rem;
+    padding-left: 3rem;
+}
+
+/*AR*/
+
+.ar_sobre{
+    width: 50%;
+    padding: 2em;
+    padding-left: 7.3em;
+    transition: transform 0.5s;
+}
+
+.ar_sobre:hover{
+    transform: scale(1.1);
+}
+.perso_ar{
+    margin-top: -0.7rem;
+    margin-left: 3.3em;
+    width: 90%;
+}
+
+#titulo_ar{
+    font-size: 1.3em;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-bottom: .8rem;
+}
+
+#texto_ar{
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    width: 21rem;
+    padding-left: 3rem;
+}
+
+
+/*Footer*/
+
+#desen_1{
+    max-width: 20rem;
+    max-height: 20rem;
+    margin-left: 12rem;
+}
+
+#desen_2{
+    max-width: 20rem;
+    max-height: 20rem;
+   
+}
+
+.linha-vertical{
+    height: 190px;
+    border-left: 2px solid;
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+
+#icon_email{
+    max-width: 20rem;
+    max-height: 20rem;
+    position: relative;
+    left: 18rem;
+    top: -5rem;
+}
+
+#icon_git1{
+    max-width: 20rem;
+    max-height: 3rem;
+    position: relative;
+    left: -11.3rem;
+    top: 6rem;
+}
+
+#icon_git2{
+    max-width: 20rem;
+    max-height: 3rem;
+    position: relative;
+    left: -9.5rem;
+    top: 10.5rem;
+}
+
+#text_v{
+    margin-top: 13rem;
+    white-space: nowrap;
+    margin-left: -34rem;
+    font-size:x-large;
+    letter-spacing: 0.1rem;
+}
+
+#text_email{
+    margin-top: 3rem;
+    margin-left: 13rem;
+}
+
+#text_git{
+    margin-top: 7rem;
+    margin-left: -10.5rem;
+}
+
+#text_git2{
+    margin-top: 11.5rem;
+    margin-left: -8.5rem;
+}
+/*Footer fim*/
+
