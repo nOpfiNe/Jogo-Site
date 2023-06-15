@@ -79,10 +79,10 @@ header{
 .menu{
     width: var(--menu-size);
     height: 100%;
-    background-color: hsla(207, 90%, 80%, 0.774) ;
+    background-color:  hsla(207, 50%, 58%, 0.774) ;
     position: fixed;
     top: 0;
-}
+} 
 
 .menu ul{
     list-style: none;
