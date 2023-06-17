@@ -15,6 +15,7 @@ body{
     background-image: url("/img/mar/mar.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 /*menu*/
@@ -93,6 +94,7 @@ body{
     letter-spacing: .3em;
 }
 
+
 #keyboard-container {
     margin-top: 2rem;
     display: flex;
@@ -132,4 +134,18 @@ body{
 
 .hidden {
     visibility: hidden;
+}
+
+/*Seta retorno*/
+
+.seta-retorno{
+    display: flex;
+    margin-left: 80em;
+    margin-top: -20em;
+    transition: transform .5s ;
+}
+
+.seta-retorno:hover{
+    transform: scale(1.2);
+    
 }
