@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 1: Mar</title>
+    <title>Nivel 1: Peixe</title>
 
     <link rel="logo icon" href="img/img_index/logo_head.png" >
 
     <link rel="stylesheet" href="assets/css/level/mar/level1-after.css">
+
+    <link rel="stylesheet" href="assets/css/level/mar/level1.css">
 
 </head>
 <body>
@@ -43,62 +45,20 @@
             <a  id="podcast-pause" onclick="pauseShow()" style="display:none;"><img src="img/icon/pause.svg"></a>
                  
             <!-- Audio player -->
-            <audio id="podcast-audio"><source src="assets/mp3/mar/gota.mp3" type="audio/mpeg"></audio>
+            <audio id="podcast-audio"><source src="assets/mp3/mar/peixe.mp3" type="audio/mpeg"></audio>
 
         </div>
 
        <img src="img/mar/peixe.png" class="clickPeixe" alt="Peixe clicavel">
 
-
-       <div id="palavra-secreta">
-            <div class="letras">P</div>
-            <div class="letras">E</div>
-            <div class="letras">I</div>
-            <div class="letras">X</div>
-            <div class="letras">E</div>
+       <div class="palavra-secreta">
+            <div id="word-container"></div>
+           
        </div>
-
-       <div id="teclado">
-            <div class="teclas">
-                <button id="tecla-A">A</button>
-                <button id="tecla-B">B</button>
-                <button id="tecla-C">C</button>
-                <button id="tecla-D">D</button>
-                <button id="tecla-E">E</button>
-                <button id="tecla-F">F</button>
-                <button id="tecla-G">G</button>
-                <button id="tecla-H">H</button>
-                <button id="tecla-I">I</button>
-            </div>
-            <div class="teclas">
-                <button id="tecla-J">J</button>
-                <button id="tecla-K">K</button>
-                <button id="tecla-L">L</button>
-                <button id="tecla-M">M</button>
-                <button id="tecla-N">N</button>
-                <button id="tecla-O">O</button>
-                <button id="tecla-P">P</button>
-                <button id="tecla-Q">Q</button>
-                <button id="tecla-R">R</button>
-            </div>
-            <div class="teclas">
-                <button id="tecla-S">S</button>
-                <button id="tecla-T">T</button>
-                <button id="tecla-U">U</button>
-                <button id="tecla-V">V</button>
-                <button id="tecla-W">W</button>
-                <button id="tecla-X">X</button>
-                <button id="tecla-Y">Y</button>
-                <button id="tecla-Z">Z</button>
-                <button id="btnReiniciar">🕹️</button>
-            </div>
-
-       </div>
-
-       <!-- categoria video 1 e modal -->
-
+        <div id="keyboard-container"></div>
     </div>
-
+    
+    <audio id="victory-audio" src="assets/mp3/mar/labamba.mp3"></audio>
 
     <script src="assets/js/mar/level1.js"></script>
     <script src="assets/js/mar/forca.js"></script>
