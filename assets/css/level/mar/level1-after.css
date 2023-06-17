@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
-:root{
-    --menu-size: 260px;
-}
 
 *{
     margin: 0;
@@ -16,88 +13,12 @@
 body{
     background-color: rgb(0, 242, 255);
     background-image: url("/img/mar/mar.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*menu*/
 
-header{
-    padding: 10px;
-}
-
-.btnMenu, img{
-    width: 2.8rem;
-}
-
-.btnMenu{
-    margin-top: 0.3rem;
-    margin-left: 1rem;
-    cursor: pointer;
-    padding: 5px;
-    transition: all .7s;
-}
-
-.btnMenu:hover{
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.btnMenu:active{
-    background-color: #002ac2e6;
-}
-
-.btnClose{
-    cursor: pointer;
-    padding: 5px;
-    background-color: hsla(0, 0%, 100%, 0);
-    color: #ffd145;
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: all 0.9s;
-}
-
-.btnClose:hover{
-    cursor: pointer;
-    color: #002BC2;
-}
-
-.menu{
-    width: var(--menu-size);
-    height: 100%;
-    background-color: hsla(207, 90%, 80%, 0.774)  ;
-    position: fixed;
-    top: 0;
-}
-
-.menu ul{
-    list-style: none;
-    padding-top: 25px;
-}
-
-.menu ul li{
-    display: block;
-    padding-top: 5px;
-}
-
-.menu ul li a{
-    display: block;
-    color: #fff;
-    letter-spacing: 0.1rem; 
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 7px 10px;
-    transition: all .7s;
-}
-
-.menu ul li a:hover{
-    background-color: rgba(147, 255, 255, 0.582);
-}
-
-.effect {
-    transition: margin 0.4s;
-}
-
-/*fim menu*/
 
 .container{
     background-color: rgba(255, 255, 255, 0.833);
@@ -115,9 +36,10 @@ header{
 }
 
 .clickPeixe{
-    width: 19%;
+    width: 15%;
     margin-top: 2.5em;
     cursor: pointer;
+
 }
 
 /*audio*/
@@ -125,18 +47,25 @@ header{
 .player-ctrl {
     display: flex;
     background-color:aqua;
-    border-radius: 18px;
+    border-radius: 100%;
     border: 2px solid rgba(0, 0, 0, 0.437);
-    width: 11em;
-    height: 2.2em;
-    margin-left: 29.5em;
+    width: 2.8em;
+    height: 2.8em;
+    margin-left: 33.6em;
     margin-top: 3em;
-  }
+    align-items: center;
+    display: flex;
+    transition: transform .5s ;
+}
+
+.player-ctrl:hover{
+    transform: scale(1.2);
+}
 
 .player-ctrl img{
     margin-top: 3px;
     width: 70%;
-    margin-left: 9px;
+    margin-left: 10px;   
 }
 
 .player-ctrl a{
@@ -146,38 +75,37 @@ header{
 /*fim audio*/
 
 
-/* Forca palavra escondida */
+/* Forca */
 
-#palavra-secreta{
+.palavra-secreta{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.8em;
-    margin-top: 25px;
+    font-size: 2em;
 }
 
-.letras{
-    width:  1.1em;
+#word-container {
+    margin: 1em auto;
+    width: 4.2em;
     text-align: center;
     border-bottom: 3px solid aqua;
-    padding: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
+    padding: 1px;
+    letter-spacing: .3em;
 }
 
-
-/* Fim forca palavra escondida */
-
-/*Teclado*/
-
-#teclado{
-    margin-top: 30px;
+#keyboard-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.teclas button{
-    font-size: 1rem;
+.button {
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
+    padding-top: .4rem;
     width: 4em;
-    height: 2.6em;
+    height: 2em;
     margin: 5px;
     margin-bottom: 8px;
     cursor: pointer;
@@ -187,11 +115,21 @@ header{
     color: rgb(0, 0, 0);
     font-weight: 800;
     transition: all .3s;
+
 }
 
-
-.teclas button:hover{
+.button:hover {
     transform: scale(1.2);
 }
 
-/* Fim teclado */
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}

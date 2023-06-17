@@ -1,7 +1,5 @@
 'use strict'
 
-const gM = document.querySelector(".imgClick");
-const iGM = document.querySelector(".imgClick img");
 
 const menuSize = '260px';
 

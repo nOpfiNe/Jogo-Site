@@ -16,25 +16,12 @@
 body{
     background-color: rgb(0, 242, 255);
     background-image: url("/img/mar/mar.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 }
 
-.content h2{
-   position: relative;
-   text-align: center;
-   font-size: 1.7rem;
-   letter-spacing: 0.1rem;
-   animation: go-back 1.5s infinite alternate;
-}
-  
-@keyframes go-back {
-    from {
-      transform: translateY(16px);
-      
-    }
-    to {
-      transform: translateY(0);
-    }
-}
+
 header{
     padding: 10px;
 }
@@ -79,10 +66,10 @@ header{
 .menu{
     width: var(--menu-size);
     height: 100%;
-    background-color:  hsla(207, 50%, 58%, 0.774) ;
+    background-color: hsla(207, 50%, 58%, 0.774) ;
     position: fixed;
     top: 0;
-} 
+}
 
 .menu ul{
     list-style: none;
@@ -112,8 +99,40 @@ header{
     transition: margin 0.4s;
 }
 
-.clickPeixe{
-    width: 250px;
-    margin-left: 150px;
-    cursor: pointer;
+
+
+/*Cenário*/
+
+
+#img-peixe{
+    width: 13%;
+    margin-left: 5em;
+    display: flex;
+}
+
+#img-tartaruga{
+    display: flex;
+    width: 13%;
+    margin-left: 50em;
+}
+
+#img-polvo{
+    display: flex;
+    width: 10%;
+    margin-top: 5em;
+    margin-left: 30em;
+}
+
+#img-estrela{
+      display: flex;
+    width: 5%;
+    margin-top: 4.5em;
+    margin-left: 30em;
+}
+
+#img-concha{
+    display: flex;
+    width: 10%;
+    margin-top: -9em;
+    margin-left: 74em;
 }
