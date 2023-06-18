@@ -98,16 +98,17 @@ body{
 #keyboard-container {
     margin-top: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .button {
     font-size: 1.4rem;
     text-align: center;
     align-items: center;
-    padding-top: .4rem;
-    width: 4em;
-    height: 2em;
+    padding-top: .2rem;
+    width: 2.5em;
+    height: 1.6em;
     margin: 5px;
     margin-bottom: 8px;
     cursor: pointer;
@@ -117,7 +118,7 @@ body{
     color: rgb(0, 0, 0);
     font-weight: 800;
     transition: all .3s;
-
+    background-color: white;
 }
 
 .button:hover {
@@ -140,7 +141,7 @@ body{
 
 .seta-retorno{
     display: flex;
-    margin-left: 80em;
+    margin-left: 81.5em;
     margin-top: -20em;
     transition: transform .5s ;
 }
@@ -149,3 +150,4 @@ body{
     transform: scale(1.2);
     
 }
+
