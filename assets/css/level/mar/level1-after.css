@@ -87,9 +87,7 @@ body{
 
 #word-container {
     margin: 1em auto;
-    width: 4.2em;
     text-align: center;
-    border-bottom: 3px solid aqua;
     padding: 1px;
     letter-spacing: .3em;
 }
@@ -141,13 +139,42 @@ body{
 
 .seta-retorno{
     display: flex;
-    margin-left: 81.5em;
+    justify-content: flex-end;
     margin-top: -20em;
-    transition: transform .5s ;
+    margin-right: 2.5em;
 }
 
-.seta-retorno:hover{
-    transform: scale(1.2);
-    
+
+/*animais*/
+
+.clickPolvo{
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    margin-top: 2em;
+    margin-left: 30em;
 }
 
+.clickTartaruga{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    margin-top: 2em;
+    margin-left: 30em;
+}
+
+.clickEstrela{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin-top: 2em;
+    margin-left: 32em;
+}
+
+.clickConcha{
+    display: flex;
+    justify-content: center;
+    width: 17%;
+    margin-top: 2em;
+    margin-left: 29em;
+}

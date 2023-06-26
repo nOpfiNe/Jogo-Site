@@ -48,6 +48,7 @@ header{
 }
 
 .btnClose{
+    margin-top: .2em;
     cursor: pointer;
     padding: 5px;
     background-color: hsla(0, 0%, 100%, 0);
@@ -87,7 +88,7 @@ header{
     letter-spacing: 0.1rem; 
     font-size: 1.3rem;
     text-decoration: none;
-    padding: 7px 10px;
+    padding: 7px 19px;
     transition: all .7s;
 }
 
@@ -124,15 +125,15 @@ header{
 }
 
 #img-estrela{
-      display: flex;
+    display: flex;
     width: 5%;
-    margin-top: 4.5em;
-    margin-left: 30em;
+    margin-top: 5em;
+    margin-left: 32em;
 }
 
 #img-concha{
     display: flex;
     width: 10%;
-    margin-top: -9em;
-    margin-left: 74em;
+    margin-top: -3.9em;
+    margin-left: 70em;
 }
