@@ -145,34 +145,42 @@ body{
 
 /*animais*/
 
-.clickPolvo{
+.clickMaribel{
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    margin-top: 1em;
+    margin-left: 25em;
+}
+
+.clickCachorro{
     display: flex;
     justify-content: center;
     width: 12%;
     margin-top: 2em;
-    margin-left: 30em;
+    margin-left: 25em;
 }
 
-.clickTartaruga{
+.clickArvore{
     display: flex;
     justify-content: center;
-    width: 15%;
+    width: 12%;
     margin-top: 2em;
-    margin-left: 30em;
+    margin-left: 25em;
 }
 
-.clickEstrela{
+.clickLaranja{
     display: flex;
     justify-content: center;
-    width: 10%;
+    width: 12%;
     margin-top: 2em;
-    margin-left: 32em;
+    margin-left: 25em;
 }
 
-.clickConcha{
+.clickCesta{
     display: flex;
     justify-content: center;
-    width: 17%;
+    width: 12%;
     margin-top: 2em;
-    margin-left: 29em;
+    margin-left: 25em;
 }
