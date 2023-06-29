@@ -10,15 +10,15 @@ let errors = 0;
 for (let i = 65; i <= 90; i++) {
     const button = document.createElement("div");
     button.className = "button";
-    button.innerHTML = String.fromCharCode(i);
-    button.addEventListener("click", handleGuess);
-    keyboardContainer.appendChild(button);
+    button.innerHTML = String.fromCharCode(i); /*dar a função do i*/
+    button.addEventListener("click", handleGuess); /* ação do click*/
+    keyboardContainer.appendChild(button); /*mostrar o tecladp na tela */
 }
 
 // Função para lidar com os cliques nos botões do teclado
 function handleGuess(event) {
-    const letter = event.target.innerHTML;
-    event.target.removeEventListener("click", handleGuess);
+    const letter = event.target.innerHTML;  /*amarzenar informação do butão clicado*/
+    event.target.removeEventListener("click", handleGuess); 
 
     if (word.includes(letter)) {
         event.target.className = "button correct";
